@@ -75,7 +75,10 @@ var Game = {
         Pong.canvas.height / 2 - 48,
         700,
         100
-    };
-
+    );
+    
+    //Change the canvas color;
+    Pong.context.fillstyle = '#ffffff';
+    
     setTimeout(function () {
       Pong = Object.assign
