@@ -1,4 +1,4 @@
-//Global Variables
+// Global Variables
 var DIRECTION = {
   IDLE: 0
   UP:1
@@ -9,7 +9,7 @@ var DIRECTION = {
 var rounds = [5, 5, 3, 2];
 var colors = ['#1abc9c', '#2fe00b', '#1bb3ad', '#34986b','#983434'];
 
-//The ball object (the cube that bounces back and fourth)
+// The ball object (the cube that bounces back and fourth)
 var Ball = {
   new: function (incrementedspeed) {
     return {
@@ -24,7 +24,7 @@ var Ball = {
   }
 };
 
-//The ai object (The two lines that move up and down)
+// The ai object (The two lines that move up and down)
 var Ai = {
   new: function (side) {
     return {
@@ -77,8 +77,10 @@ var Game = {
         100
     );
     
-    //Change the canvas color;
+    // Change the canvas color;
     Pong.context.fillstyle = '#ffffff';
+
+    // Draw the 
     
     setTimeout(function () {
       Pong = Object.assign
