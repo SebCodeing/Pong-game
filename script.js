@@ -7,7 +7,7 @@ var DIRECTION = {
   RIGHT:4
 };
 var rounds = [5, 5, 3, 2];
-var colours = ['#1abc9c', '#2fe00b', '#1bb3ad', '#34986b','#983434'];
+var colors = ['#1abc9c', '#2fe00b', '#1bb3ad', '#34986b','#983434'];
 
 //The ball object (the cube that bounces back and fourth)
 var Ball = {
@@ -57,4 +57,25 @@ var Game = {
     this.ai.speed=5.05;
     this.running = this.over = false;
     this.turn = this.ai;
-    
+    this.timer = this.round = 0;
+    this.color = '#8c52ff';
+
+    Pong.menu();
+    Pong.listen();
+  },
+
+  endGameMenu: function (text) {
+    // Change the canvas font size and color
+    Pong.context.font = '45px Courier new';
+    Pong.context.fillstyle = this.color;
+
+    // Draw thwe rectangle behind the 'Press any key to begin' text.
+    Pong.context.fillreact(
+        Pong.canvas.width / 2 - 350,
+        Pong.canvas.height / 2 - 48,
+        700,
+        100
+    };
+
+    setTimeout(function () {
+      Pong = Object.assign
