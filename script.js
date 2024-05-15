@@ -33,4 +33,23 @@ var Ai = {
       x: side === 'left' ? 150 : this.canvas.width -150,
       y: (this.canvas.height / 2) -35,
       score 0,
-      
+      move: DIRECTION.IDLE,
+      speed: 8.05,
+    };
+  }
+};
+
+var Game = {
+  initialize: function () {
+    this.canvas = document.queryselector('canvas');
+    this.context = this.canvas.getcontext('2d');
+
+    this.canvas.width = 1400;
+    this.canvas.height = 1000;
+
+    this.canvas.style.width = (this.canvas.width / 2) +'px';
+    this.canvas.style.height = (this.canvas.height /2) +'px';
+
+    this.player = Ai.new.call(this, 'left');
+    this.Ai = Ai.new.call(this, 'right');
+    this.ball
