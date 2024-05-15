@@ -52,4 +52,9 @@ var Game = {
 
     this.player = Ai.new.call(this, 'left');
     this.Ai = Ai.new.call(this, 'right');
-    this.ball
+    this.ball = Ball.new.call(this);
+
+    this.ai.speed=5.05;
+    this.running = this.over = false;
+    this.turn = this.ai;
+    
