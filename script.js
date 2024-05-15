@@ -7,6 +7,7 @@ var DIRECTION = {
   RIGHT:4
 };
 var rounds = [5, 5, 3, 2];
+//hex-decimal values for colors 
 var colors = ['#1abc9c', '#2fe00b', '#1bb3ad', '#34986b','#983434'];
 
 // The ball object (the cube that bounces back and fourth)
