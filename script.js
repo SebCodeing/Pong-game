@@ -84,4 +84,4 @@ var Game = {
     // Draw the 
     
     setTimeout(function () {
-      Pong = Object.assign
+      Pong = Object.assign(
